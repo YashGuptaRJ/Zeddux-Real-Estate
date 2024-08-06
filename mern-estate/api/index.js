@@ -8,8 +8,9 @@ import cookieParser from 'cookie-parser';
 import path from 'path';
 dotenv.config();
 
-mongoose
-  .connect(process.env.MONGO)
+
+   
+mongoose.connect("mongodb+srv://2021cs49ya:sahand@zeddux-real.bjjd9pl.mongodb.net/?retryWrites=true&w=majority&appName=Zeddux-Real")
   .then(() => {
     console.log('Connected to MongoDB!');
   })
